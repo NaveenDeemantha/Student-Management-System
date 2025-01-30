@@ -1,0 +1,52 @@
+[
+  {
+    "studentId": "S001",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "city": "New York",
+    "course": "Computer Science",
+    "guardian": "Jane Doe",
+    "subject": "Mathematics"
+  },
+  {
+    "studentId": "S002",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "jane.smith@example.com",
+    "city": "Los Angeles",
+    "course": "Biology",
+    "guardian": "Mark Smith",
+    "subject": "Biochemistry"
+  },
+  {
+    "studentId": "S003",
+    "firstName": "Nimasha",
+    "lastName": "Punchihewa",
+    "email": "shehani@gmail.com",
+    "city": "Galle",
+    "course": "IT",
+    "guardian": "Dad",
+    "subject": "ETF"
+  },
+  {
+    "studentId": "S007",
+    "firstName": "Deem",
+    "lastName": "GUNE",
+    "email": "deem@gmail.com",
+    "city": "Colombo",
+    "course": "IT",
+    "guardian": "Mom",
+    "subject": "ETF"
+  },
+  {
+    "studentId": "s008",
+    "firstName": "chathumini",
+    "lastName": "jayalagth",
+    "email": "chathu@gmail.com",
+    "city": "kegalle",
+    "course": "it",
+    "guardian": "abc",
+    "subject": "etf2"
+  }
+]

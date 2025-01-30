@@ -1,0 +1,636 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.custom-hero{
+  background-color: #00204a; /* BAckground of the section*/
+  color:  #d9faff; /* Text color to white */
+  border-radius: op; /*naking corners round*/
+  box-shadow: 0 4PX 8PX rgba (0,0,0, 0.1);
+  text-align: center;
+  padding: 50px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+form{
+  /*background-color: #f8f9fa;*/
+  padding: 20px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba (0,0,0,0.1);
+  /* update page */
+  width: auto;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+form.form-control{
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  transition: border-color 0.3 ease in-out;
+}
+form .form-control:focus{
+  border-color: #007bff;
+  box-shadow: 0px 0px 4px rgba (0, 123, 255, 0.5);
+}
+form button{
+  margin-top: 15px;
+  background-color:#007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+form button:hover{
+  background-color: #0056b3;
+}
+/* Dark mode for input fields */
+body.bg-dark .form-control {
+  background-color: #495057; /* Darker background */
+  color: white; /* White text */
+  border-color: #6c757d; /* Subtle border */
+}
+
+/* Dark mode for submit button */
+body.bg-dark form button {
+  background-color: #6c757d; /* Gray button */
+}
+
+body.bg-dark form button:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+}
+
+/*update form*/
+form label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+/*
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}*/
+
+/* Styles for the table */
+#studentTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #005792; /* Blue border */
+}
+
+#studentTable th, #studentTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#studentTable th {
+  background-color: #00204a; /* Dark blue header */
+  color: white;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #005792;
+}
+
+#studentTable td {
+  background-color: #d9faff; /* Light blue for table rows */
+  color: #00204a; /* Dark blue text */
+  border-bottom: 1px solid #005792;
+}
+
+#studentTable tr:hover {
+  background-color: #fd5f00; /* Orange hover effect */
+  color: white;
+}
+
+#studentTable tr:nth-child(even) {
+  background-color: #f2f8ff; /* Slightly lighter background for even rows */
+}
+
+#studentTable tr:nth-child(odd) {
+  background-color: #d9faff; /* Light blue background for odd rows */
+}
+
+#studentTable td,
+#studentTable th {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling for dark mode toggle */
+#dark-mode-toggle {
+  color: #fd5f00;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#dark-mode-toggle:hover {
+  color: Gray;
+}
+
+/* Adding some spacing for the table container */
+.container {
+  margin-top: 30px;
+}
+
+/*css for search page*/ 
+/* Search Page Specific Styles */
+#search-page form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #005792, #00204a);
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+}
+
+#search-page form label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: block;
+  color: #fdfdfd;
+  font-weight: bold;
+}
+
+#search-page form input,
+#search-page form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#search-page form input:focus,
+#search-page form select:focus {
+  outline: none;
+  border: 2px solid #fd5f00;
+  box-shadow: 0 4px 8px rgba(253, 95, 0, 0.3);
+}
+
+#search-page form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #fd5f00;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(253, 95, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#search-page form button:hover {
+  background-color: #005792;
+  box-shadow: 0 6px 12px rgba(0, 87, 146, 0.3);
+  transform: translateY(-2px);
+}
+
+#search-page form button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Dropdown Styling */
+#search-page form select {
+  appearance: none; /* Removes default dropdown arrow */
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333" width="24" height="24"%3E%3Cpath d="M7 10l5 5 5-5z"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1.2em;
+}
+
+#search-page form select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #search-page form {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  #search-page form label {
+    font-size: 1rem;
+  }
+
+  #search-page form button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #search-page form {
+    padding: 10px;
+  }
+
+  #search-page form label {
+    font-size: 0.9rem;
+  }
+
+  #search-page form input,
+  #search-page form select,
+  #search-page form button {
+    font-size: 0.9rem;
+  }
+}
+
+/*update body styles*/
+/* Update Page Specific Styles */
+#update-page form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #005792, #00204a);
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+}
+
+#update-page form label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: block;
+  color: #fdfdfd;
+  font-weight: bold;
+}
+
+#update-page form input,
+#update-page form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#update-page form input:focus,
+#update-page form select:focus {
+  outline: none;
+  border: 2px solid #fd5f00;
+  box-shadow: 0 4px 8px rgba(253, 95, 0, 0.3);
+}
+
+#update-page form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #fd5f00;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(253, 95, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#update-page form button:hover {
+  background-color: #005792;
+  box-shadow: 0 6px 12px rgba(0, 87, 146, 0.3);
+  transform: translateY(-2px);
+}
+
+#update-page form button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Dropdown Styling */
+#update-page form select {
+  appearance: none; /* Removes default dropdown arrow */
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333" width="24" height="24"%3E%3Cpath d="M7 10l5 5 5-5z"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1.2em;
+}
+
+#update-page form select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #update-page form {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  #update-page form label {
+    font-size: 1rem;
+  }
+
+  #update-page form button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #update-page form {
+    padding: 10px;
+  }
+
+  #update-page form label {
+    font-size: 0.9rem;
+  }
+
+  #update-page form input,
+  #update-page form select,
+  #update-page form button {
+    font-size: 0.9rem;
+  }
+}
+
+/* insert body styles*/
+/* Insert Page Specific Styles */
+#insert-page form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #005792, #00204a);
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+}
+
+#insert-page form label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: block;
+  color: #fdfdfd;
+  font-weight: bold;
+}
+
+#insert-page form input,
+#insert-page form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#insert-page form input:focus,
+#insert-page form select:focus {
+  outline: none;
+  border: 2px solid #fd5f00;
+  box-shadow: 0 4px 8px rgba(253, 95, 0, 0.3);
+}
+
+#insert-page form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #fd5f00;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(253, 95, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#insert-page form button:hover {
+  background-color: #005792;
+  box-shadow: 0 6px 12px rgba(0, 87, 146, 0.3);
+  transform: translateY(-2px);
+}
+
+#insert-page form button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #insert-page form {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  #insert-page form label {
+    font-size: 1rem;
+  }
+
+  #insert-page form button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #insert-page form {
+    padding: 10px;
+  }
+
+  #insert-page form label {
+    font-size: 0.9rem;
+  }
+
+  #insert-page form input,
+  #insert-page form select,
+  #insert-page form button {
+    font-size: 0.9rem;
+  }
+}
+
+/*index page styles*/
+
+
+#index-page table {
+  width: 100%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#index-page table thead {
+  background-color: #005792;
+  color: #ffffff;
+}
+
+#index-page table th,
+#index-page table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#index-page table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#index-page table tbody tr:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #index-page .custom-hero h1 {
+    font-size: 2rem;
+  }
+
+  #index-page .custom-hero p {
+    font-size: 1rem;
+  }
+
+  #index-page table th,
+  #index-page table td {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #index-page .custom-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  #index-page table th,
+  #index-page table td {
+    font-size: 0.8rem;
+  }
+}
+
+/* Delete Form Design */
+#delete-page form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#delete-page form label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#delete-page form input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#delete-page form input[type="text"]:focus {
+  border-color: #005792;
+  outline: none;
+}
+
+#delete-page form button {
+  background-color: #dc3545;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+#delete-page form button:hover {
+  background-color: #c82333;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #delete-page .custom-hero h1 {
+    font-size: 2rem;
+  }
+
+  #delete-page .custom-hero p {
+    font-size: 1rem;
+  }
+
+  #delete-page form label {
+    font-size: 0.9rem;
+  }
+
+  #delete-page form input[type="text"] {
+    font-size: 0.9rem;
+  }
+
+  #delete-page form button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #delete-page .custom-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  #delete-page form label,
+  #delete-page form input[type="text"],
+  #delete-page form button {
+    font-size: 0.8rem;
+  }
+}
+
